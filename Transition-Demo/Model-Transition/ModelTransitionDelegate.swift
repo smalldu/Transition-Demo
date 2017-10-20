@@ -18,5 +18,7 @@ class ModelTransitionDelegate: NSObject,UIViewControllerTransitioningDelegate {
     return OverlayAnimator()
   }
   
-  
+  func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+    return OverlayPresentationController(presentedViewController: presented, presenting: presenting)
+  }
 }

@@ -31,18 +31,20 @@ class OverlayAnimator: NSObject,UIViewControllerAnimatedTransitioning {
       let toViewWidth = containerView.frame.width * rate
       let toViewHeight = containerView.frame.height * rate
       toView.center = containerView.center
-      toView.bounds = CGRect(origin: .zero, size: CGSize(width: 1, height: toViewHeight))
+      toView.bounds = CGRect(origin: .zero, size: CGSize(width: toViewWidth, height: toViewHeight))
+      toView.transform = CGAffineTransform.identity.scaledBy(x: 1.2, y: 1.2)
       UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut, animations: {
-        toView.bounds = CGRect(origin: .zero, size: CGSize(width: toViewWidth, height: toViewHeight))
+        toView.transform = CGAffineTransform.identity
       }, completion: { _ in
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
       })
     }
     // Dismissal 不要将 toView 添加到containerView
     if fromVC.isBeingDismissed{
-      let fromViewHeight = fromView.frame.height
+//      let fromViewHeight = fromView.frame.height
+      fromView.transform = CGAffineTransform.identity
       UIView.animate(withDuration: duration, animations: {
-        fromView.bounds = CGRect(x: 0, y: 0, width: 1, height: fromViewHeight)
+        fromView.transform = CGAffineTransform.identity.scaledBy(x: 0.001, y: 0.001)
       }, completion: { _ in
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
       })

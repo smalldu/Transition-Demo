@@ -27,20 +27,30 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <state key="normal" title="✖︎">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="dissmisPage:" destination="-1" eventType="touchUpInside" id="LQx-0J-It1"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-5O-KfX">
+                    <rect key="frame" x="0.0" y="110" width="375" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="2MD-gs-1Ru"/>
+                    </constraints>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.0043391073119999997" green="0.60242158170000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eSH-QP-TtP" secondAttribute="trailing" constant="30" id="KEC-Il-NSW"/>
+                <constraint firstItem="HGa-5O-KfX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="byk-sd-X07"/>
+                <constraint firstItem="HGa-5O-KfX" firstAttribute="top" secondItem="eSH-QP-TtP" secondAttribute="bottom" constant="30" id="fyg-KJ-WU9"/>
                 <constraint firstItem="eSH-QP-TtP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="gdM-SS-24J"/>
+                <constraint firstItem="HGa-5O-KfX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="l6F-UH-Pdm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-310" y="94"/>
+            <point key="canvasLocation" x="-310.5" y="93.5"/>
         </view>
     </objects>
 </document>

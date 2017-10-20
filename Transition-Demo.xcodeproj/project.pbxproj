@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20528C001F99F9C000D1F706 /* ModelTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20528BFF1F99F9C000D1F706 /* ModelTransitionDelegate.swift */; };
+		20528C021F99FFAB00D1F706 /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20528C011F99FFAB00D1F706 /* OverlayPresentationController.swift */; };
 		208E12181F989FD500DD860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E12171F989FD500DD860A /* AppDelegate.swift */; };
 		208E121A1F989FD500DD860A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E12191F989FD500DD860A /* ViewController.swift */; };
 		208E121D1F989FD500DD860A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208E121B1F989FD500DD860A /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		20528BFF1F99F9C000D1F706 /* ModelTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTransitionDelegate.swift; sourceTree = "<group>"; };
+		20528C011F99FFAB00D1F706 /* OverlayPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPresentationController.swift; sourceTree = "<group>"; };
 		208E12141F989FD500DD860A /* Transition-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transition-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		208E12171F989FD500DD860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		208E12191F989FD500DD860A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				208E12501F99E21800DD860A /* OverlayViewController.xib */,
 				208E12531F99E28600DD860A /* OverlayAnimator.swift */,
 				20528BFF1F99F9C000D1F706 /* ModelTransitionDelegate.swift */,
+				20528C011F99FFAB00D1F706 /* OverlayPresentationController.swift */,
 			);
 			path = "Model-Transition";
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				208E121A1F989FD500DD860A /* ViewController.swift in Sources */,
 				208E12491F98B11600DD860A /* SlideNavidationDelegate.swift in Sources */,
+				20528C021F99FFAB00D1F706 /* OverlayPresentationController.swift in Sources */,
 				208E12511F99E21800DD860A /* OverlayViewController.swift in Sources */,
 				208E124E1F99E1D700DD860A /* PresentViewController.swift in Sources */,
 				208E124B1F98B44200DD860A /* PopViewController.swift in Sources */,
