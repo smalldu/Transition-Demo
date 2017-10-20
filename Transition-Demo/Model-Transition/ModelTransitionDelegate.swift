@@ -14,10 +14,12 @@ class ModelTransitionDelegate: NSObject,UIViewControllerTransitioningDelegate {
     return OverlayAnimator()
   }
   
+  // 获取自定义的animator
   func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return OverlayAnimator()
   }
   
+  // 这个方法用来获取自定义的 UIPresentationController
   func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
     return OverlayPresentationController(presentedViewController: presented, presenting: presenting)
   }

@@ -12,6 +12,7 @@ class OverlayPresentationController: UIPresentationController {
   
   let dimmingView = UIView()
   
+  // 在这个方法添加自定义的view和对他们执行动画
   override func presentationTransitionWillBegin() {
     guard let containerView = containerView else {
       return
